@@ -153,26 +153,26 @@ body{
 @media (max-width: 768px) {
   .container {
       height: auto;
-      min-height: 550px; /* Reduced height */
+      min-height: 550px;
   }
 
   .display {
       width: 85%;
-      margin: 20px auto 10px auto; /* Moved it a bit upwards */
+      margin: 20px auto 10px auto; 
       height: 10vh;
-      font-size: 2.5rem; /* Increased font size */
+      font-size: 2.5rem;
   }
 
   .display::before {
-      font-size: 2.5rem; /* Placeholder font size adjusted */
+      font-size: 2.5rem; 
   }
 
   .overall-container {
       flex-direction: column;
-      gap: 30px; /* More space between number buttons & operators */
+      gap: 30px; 
   }
 
-  /* Moved AC and +/- buttons near the display */
+  
   .btn-clear, .changeSign {
       position: absolute;
       top: 15px; 
@@ -189,19 +189,19 @@ body{
       right: 10%;
   }
 
-  /* Adjusted number & operator button spacing */
+ 
   .btn-container {
-      margin-top: 20px; /* Added more space */
+      margin-top: 20px; 
   }
 
   .operator-container {
-      margin-top: 40px; /* Moved operators down */
+      margin-top: 40px; 
   }
 }
 
 @media (max-width: 480px) {
   .display {
-      font-size: 3rem; /* Increased font size */
+      font-size: 3rem; 
       height: 12vh;
   }
 
