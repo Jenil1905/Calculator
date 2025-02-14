@@ -151,72 +151,120 @@ body{
 }
 
 @media (max-width: 768px) {
+  .heading1 {
+      font-size: 2.5rem;
+      margin: 15px 0;
+  }
+
   .container {
+      width: 90%;
       height: auto;
-      min-height: 550px;
+      min-height: 600px;
+      margin: 20px auto;
+      padding-bottom: 20px;
   }
 
   .display {
       width: 85%;
-      margin: 20px auto 10px auto; 
-      height: 10vh;
-      font-size: 2.5rem;
+      margin: 30px auto;
+      height: 8vh;
+      font-size: 2rem;
   }
 
   .display::before {
-      font-size: 2.5rem; 
+      font-size: 1.8rem;
   }
 
-  .overall-container {
-      flex-direction: column;
-      gap: 30px; 
-  }
-
-  
-  .btn-clear, .changeSign {
-      position: absolute;
-      top: 15px; 
-      height: 45px;
-      width: 70px;
-      font-size: 1.5rem;
-  }
-
-  .btn-clear {
-      left: 10%;
+  .btn-clear,
+  .changeSign {
+      height: 40px;
+      width: 60px;
+      font-size: 1.2rem;
+      margin-top: 25px;
   }
 
   .changeSign {
-      right: 10%;
+      margin-left: calc(100% - 150px);
   }
 
- 
-  .btn-container {
-      margin-top: 20px; 
-  }
-
+  .btn-container,
   .operator-container {
-      margin-top: 40px; 
+      gap: 8px;
+      margin-top: 30px;
+  }
+
+  .btn,
+  .operator,
+  .equal,
+  .underRoot,
+  .percentage,
+  .square {
+      height: 50px;
+      width: 50px;
+      font-size: 1.2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .display {
-      font-size: 3rem; 
-      height: 12vh;
+  .heading1 {
+      font-size: 2rem;
   }
 
-  .btn-clear, .changeSign {
-      top: 10px; 
-      height: 40px;
-      width: 65px;
+  .container {
+      width: 95%;
+      min-height: 500px;
+  }
+
+  .display {
+      height: 7vh;
+      font-size: 1.5rem;
+  }
+
+  .display::before {
       font-size: 1.3rem;
   }
 
-  .btn-container {
-      margin-top: 25px;
+  .btn-clear,
+  .changeSign {
+      height: 35px;
+      width: 50px;
+      font-size: 1rem;
   }
 
+  .btn-container,
   .operator-container {
-      margin-top: 50px;
+      gap: 5px;
+  }
+
+  .btn,
+  .operator,
+  .equal,
+  .underRoot,
+  .percentage,
+  .square {
+      height: 45px;
+      width: 45px;
+      font-size: 1rem;
+  }
+
+  .overall-container {
+      gap: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .btn,
+  .operator,
+  .equal,
+  .underRoot,
+  .percentage,
+  .square {
+      height: 40px;
+      width: 40px;
+      font-size: 0.9rem;
+  }
+  
+  .btn-container {
+      margin-left: 10px;
   }
 }
