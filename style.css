@@ -149,121 +149,74 @@ body{
   cursor: pointer;
   border-radius: 12px;
 }
-@media (max-width: 768px) {
-  .heading1 {
-      font-size: 2.5rem;
-      margin: 15px 0;
-  }
 
+@media (max-width: 768px) {
   .container {
-      width: 90%;
       height: auto;
-      min-height: 600px;
-      margin: 20px auto;
-      padding-bottom: 20px;
+      min-height: 550px; /* Reduced height */
   }
 
   .display {
       width: 85%;
-      margin: 30px auto;
-      height: 8vh;
-      font-size: 2rem;
+      margin: 20px auto 10px auto; /* Moved it a bit upwards */
+      height: 10vh;
+      font-size: 2.5rem; /* Increased font size */
   }
 
   .display::before {
-      font-size: 1.8rem;
+      font-size: 2.5rem; /* Placeholder font size adjusted */
   }
 
-  .btn-clear,
+  .overall-container {
+      flex-direction: column;
+      gap: 30px; /* More space between number buttons & operators */
+  }
+
+  /* Moved AC and +/- buttons near the display */
+  .btn-clear, .changeSign {
+      position: absolute;
+      top: 15px; 
+      height: 45px;
+      width: 70px;
+      font-size: 1.5rem;
+  }
+
+  .btn-clear {
+      left: 10%;
+  }
+
   .changeSign {
-      height: 40px;
-      width: 60px;
-      font-size: 1.2rem;
-      margin-top: 25px;
+      right: 10%;
   }
 
-  .changeSign {
-      margin-left: calc(100% - 150px);
+  /* Adjusted number & operator button spacing */
+  .btn-container {
+      margin-top: 20px; /* Added more space */
   }
 
-  .btn-container,
   .operator-container {
-      gap: 8px;
-      margin-top: 30px;
-  }
-
-  .btn,
-  .operator,
-  .equal,
-  .underRoot,
-  .percentage,
-  .square {
-      height: 50px;
-      width: 50px;
-      font-size: 1.2rem;
+      margin-top: 40px; /* Moved operators down */
   }
 }
 
 @media (max-width: 480px) {
-  .heading1 {
-      font-size: 2rem;
-  }
-
-  .container {
-      width: 95%;
-      min-height: 500px;
-  }
-
   .display {
-      height: 7vh;
-      font-size: 1.5rem;
+      font-size: 3rem; /* Increased font size */
+      height: 12vh;
   }
 
-  .display::before {
+  .btn-clear, .changeSign {
+      top: 10px; 
+      height: 40px;
+      width: 65px;
       font-size: 1.3rem;
   }
 
-  .btn-clear,
-  .changeSign {
-      height: 35px;
-      width: 50px;
-      font-size: 1rem;
-  }
-
-  .btn-container,
-  .operator-container {
-      gap: 5px;
-  }
-
-  .btn,
-  .operator,
-  .equal,
-  .underRoot,
-  .percentage,
-  .square {
-      height: 45px;
-      width: 45px;
-      font-size: 1rem;
-  }
-
-  .overall-container {
-      gap: 20px;
-  }
-}
-
-@media (max-width: 360px) {
-  .btn,
-  .operator,
-  .equal,
-  .underRoot,
-  .percentage,
-  .square {
-      height: 40px;
-      width: 40px;
-      font-size: 0.9rem;
-  }
-  
   .btn-container {
-      margin-left: 10px;
+      margin-top: 25px;
+  }
+
+  .operator-container {
+      margin-top: 50px;
   }
 }
