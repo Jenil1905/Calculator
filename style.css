@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #5c73f7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.heading1{
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    color: black;
+    font-style: bold;
+}
+.container{
+    border: 5px solid black;
+    height: 85vh;
+    width: 75vh;
+   background-color:gray;
+   margin: auto;
+   box-shadow: 5px 5px 5px 5px rgb(13, 13, 13);
+}
+.display{
+   background-color: rgba(37, 52, 11,0.6);
+   height: 10vh;
+   width: 65vh;
+   margin-top: 54px;
+   margin-left: 29px;
+   padding: auto;
+   display: flex;
+   justify-content: end;
+   font-size: 54px;
+}
+.display::before {
+    content: attr(data-placeholder); 
+    color: gray; 
+    position: absolute;
+    pointer-events: none; 
+    font-size: 52px;
+  }
+  .btn-clear{
+    background-color: black;
+    color: white;
+    height: 47px;
+    width: 75px;
+    margin-top: 36px;
+    font-size: 30px;
+    margin-left: 15px;
+  }
+  .btn-clear:hover{
+    cursor: pointer;
+  }
+  .changeSign{
+    background-color: black;
+    color: white;
+    height: 47px;
+    width: 75px;
+    margin-top: 36px;
+    font-size: 30px;
+    margin-left: 275px;
+  }
+  .changeSign:hover{
+    cursor: pointer;
+  }
+  .overall-container{
+    display: flex;
+    gap:45px;
+  }
+  .btn-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    width: fit-content;
+    margin-top: 50px;
+    margin-left:15px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 60px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.operator-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    width: fit-content;
+    margin-top: 65px;
+    
+}
+.operator{
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 60px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.equal{
+  background-color: black;
+  color: white;
+  height: 60px;
+  width: 60px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.underRoot{
+  background-color: black;
+  color: white;
+  height: 60px;
+  width: 60px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.percentage{
+  background-color: black;
+  color: white;
+  height: 60px;
+  width: 60px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.square{
+  background-color: black;
+  color: white;
+  height: 60px;
+  width: 60px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+@media (max-width: 768px) {
+  .heading1 {
+      font-size: 2.5rem;
+      margin: 15px 0;
+  }
+
+  .container {
+      width: 90%;
+      height: auto;
+      min-height: 600px;
+      margin: 20px auto;
+      padding-bottom: 20px;
+  }
+
+  .display {
+      width: 85%;
+      margin: 30px auto;
+      height: 8vh;
+      font-size: 2rem;
+  }
+
+  .display::before {
+      font-size: 1.8rem;
+  }
+
+  .btn-clear,
+  .changeSign {
+      height: 40px;
+      width: 60px;
+      font-size: 1.2rem;
+      margin-top: 25px;
+  }
+
+  .changeSign {
+      margin-left: calc(100% - 150px);
+  }
+
+  .btn-container,
+  .operator-container {
+      gap: 8px;
+      margin-top: 30px;
+  }
+
+  .btn,
+  .operator,
+  .equal,
+  .underRoot,
+  .percentage,
+  .square {
+      height: 50px;
+      width: 50px;
+      font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading1 {
+      font-size: 2rem;
+  }
+
+  .container {
+      width: 95%;
+      min-height: 500px;
+  }
+
+  .display {
+      height: 7vh;
+      font-size: 1.5rem;
+  }
+
+  .display::before {
+      font-size: 1.3rem;
+  }
+
+  .btn-clear,
+  .changeSign {
+      height: 35px;
+      width: 50px;
+      font-size: 1rem;
+  }
+
+  .btn-container,
+  .operator-container {
+      gap: 5px;
+  }
+
+  .btn,
+  .operator,
+  .equal,
+  .underRoot,
+  .percentage,
+  .square {
+      height: 45px;
+      width: 45px;
+      font-size: 1rem;
+  }
+
+  .overall-container {
+      gap: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .btn,
+  .operator,
+  .equal,
+  .underRoot,
+  .percentage,
+  .square {
+      height: 40px;
+      width: 40px;
+      font-size: 0.9rem;
+  }
+  
+  .btn-container {
+      margin-left: 10px;
+  }
+}
